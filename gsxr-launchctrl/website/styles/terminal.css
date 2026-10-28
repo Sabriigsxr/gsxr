@@ -1,0 +1,21 @@
+// GSXR LAUNCHCTRL — Active nav link styling
+.nav-link.active {
+  color: var(--gsxr-cyan);
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gsxr-cyan);
+  box-shadow: 0 0 8px var(--gsxr-cyan);
+}
+
+// Terminal output value text color
+.terminal-output-value.text-cyan {
+  color: var(--gsxr-cyan);
+}

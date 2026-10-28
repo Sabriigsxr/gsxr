@@ -1,0 +1,12 @@
+<!-- GSXR LAUNCHCTRL — Monochrome Version -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="GSXR LAUNCHCTRL monochrome">
+  <text x="100" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="900" font-size="80" fill="#F5F7FA" transform="skewX(-8)">
+    GSXR
+  </text>
+  <text x="380" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="700" font-size="60" fill="#F5F7FA" transform="skewX(-8)">
+    LAUNCHCTRL
+  </text>
+  <text x="230" y="120" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="80" fill="#C7D0DC" transform="skewX(-8)">
+    X
+  </text>
+</svg>

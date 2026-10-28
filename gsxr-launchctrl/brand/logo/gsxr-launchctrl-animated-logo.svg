@@ -1,0 +1,46 @@
+<!-- GSXR LAUNCHCTRL — Animated Logo Reveal -->
+<!-- 3-second animation: blue light sweeps across wordmark -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="GSXR LAUNCHCTRL animated logo">
+  <defs>
+    <linearGradient id="gradAnim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080B10"/>
+      <stop offset="50%" stop-color="#087BFF"/>
+      <stop offset="100%" stop-color="#080B10"/>
+    </linearGradient>
+    <clipPath id="wordmarkClip">
+      <text x="100" y="120" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="80" transform="skewX(-8)">GSXR</text>
+      <text x="380" y="120" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="60" transform="skewX(-8)">LAUNCHCTRL</text>
+    </clipPath>
+    <filter id="glowAnim">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="200" fill="#080B10"/>
+  <!-- Background grid pattern -->
+  <g stroke="#111722" stroke-width="1">
+    <defs>pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#111722" stroke-width="1"/>
+    </defs>
+    <rect width="800" height="200" fill="url(#grid)" opacity="0.3"/>
+  </g>
+  <!-- Reveal sweep -->
+  <rect id="sweep" x="-200" y="0" width="400" height="200" fill="url(#gradAnim)" clip-path="url(#wordmarkClip)" opacity="0">
+    <animate attributeName="x" values="-200;800" dur="3s" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="0s"/>
+  </rect>
+  <!-- Wordmark (revealed by sweep) -->
+  <text x="100" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="900" font-size="80" fill="#F5F7FA" transform="skewX(-8)">
+    GSXR
+  </text>
+  <text x="380" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="700" font-size="60" fill="#F5F7FA" transform="skewX(-8)">
+    LAUNCHCTRL
+  </text>
+  <!-- X signature with glow -->
+  <text x="230" y="120" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="80" fill="#21C8FF" filter="url(#glowAnim)" transform="skewX(-8)">
+    X
+  </text>
+</svg>

@@ -1,0 +1,26 @@
+<!-- GSXR LAUNCHCTRL — Blue-on-Black Version -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="GSXR LAUNCHCTRL blue-on-black">
+  <defs>
+    <linearGradient id="blueGradBlack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#087BFF"/>
+      <stop offset="100%" stop-color="#21C8FF"/>
+    </linearGradient>
+    <filter id="blueGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="200" fill="#080B10"/>
+  <text x="100" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="900" font-size="80" fill="url(#blueGradBlack)" transform="skewX(-8)">
+    GSXR
+  </text>
+  <text x="380" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="700" font-size="60" fill="#F5F7FA" transform="skewX(-8)">
+    LAUNCHCTRL
+  </text>
+  <text x="230" y="120" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="80" fill="#21C8FF" filter="url(#blueGlow)" transform="skewX(-8)">
+    X
+  </text>
+</svg>

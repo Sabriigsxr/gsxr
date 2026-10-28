@@ -1,0 +1,50 @@
+/* GSXR LAUNCHCTRL — Design Tokens (CSS) */
+
+:root {
+  /* Primary Colors */
+  --gsxr-black: #080B10;
+  --gsxr-carbon: #111722;
+  --gsxr-blue: #087BFF;
+  --gsxr-cyan: #21C8FF;
+
+  /* Text Colors */
+  --gsxr-white: #F5F7FA;
+  --gsxr-silver: #C7D0DC;
+
+  /* Accent */
+  --gsxr-red: #FF3048;
+
+  /* Gradients */
+  --gsxr-blue-gradient: linear-gradient(135deg, #087BFF 0%, #21C8FF 100%);
+  --gsxr-accent-gradient: linear-gradient(90deg, #087BFF 0%, #21C8FF 50%, #FF3048 100%);
+
+  /* Typography */
+  --gsxr-font-display: 'Space Grotesk', 'Rajdhani', 'Oxanium', sans-serif;
+  --gsxr-font-body: 'Inter', 'Space Grotesk', system-ui, sans-serif;
+  --gsxr-font-mono: 'IBM Plex Mono', 'Fira Code', 'Menlo', 'Consolas', monospace;
+
+  /* Spacing (8px base unit) */
+  --gsxr-space-xs: 0.5rem;   /* 8px */
+  --gsxr-space-sm: 1rem;     /* 16px */
+  --gsxr-space-md: 1.5rem;   /* 24px */
+  --gsxr-space-lg: 2rem;     /* 32px */
+  --gsxr-space-xl: 3rem;     /* 48px */
+  --gsxr-space-xxl: 4rem;    /* 64px */
+  --gsxr-space-xxxl: 6rem;   /* 96px */
+
+  /* Border Radius */
+  --gsxr-radius-sm: 4px;
+  --gsxr-radius-md: 8px;
+  --gsxr-radius-lg: 16px;
+  --gsxr-radius-xl: 32px;
+
+  /* Transitions */
+  --gsxr-transition-fast: 120ms ease-out;
+  --gsxr-transition-base: 250ms ease-in-out;
+  --gsxr-transition-slow: 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* Shadows */
+  --gsxr-shadow-blue: 0 0 15px rgba(8, 123, 255, 0.4);
+  --gsxr-shadow-cyan: 0 0 20px rgba(33, 200, 255, 0.3);
+  --gsxr-shadow-red: 0 0 10px rgba(255, 48, 72, 0.5);
+}

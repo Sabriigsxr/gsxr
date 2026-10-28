@@ -1,0 +1,33 @@
+<!-- GSXR LAUNCHCTRL — Primary Horizontal Wordmark -->
+<!-- Bold condensed display with racing slant, X as tachometer signature -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="GSXR LAUNCHCTRL">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#087BFF"/>
+      <stop offset="100%" stop-color="#21C8FF"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background for reference -->
+  <rect width="800" height="200" fill="#080B10"/>
+  <!-- GSXR text with racing slant -->
+  <text x="100" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="900" font-size="80" fill="url(#blueGradient)" transform="skewX(-8)">
+    GSXR
+  </text>
+  <!-- LAUNCHCTRL text -->
+  <text x="380" y="120" font-family="'Space Grotesk', 'Rajdhani', sans-serif" font-weight="700" font-size="60" fill="#F5F7FA" transform="skewX(-8)">
+    LAUNCHCTRL
+  </text>
+  <!-- Stylized X signature with cyan glow -->
+  <text x="230" y="120" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="80" fill="#21C8FF" filter="url(#glow)" transform="skewX(-8)">
+    X
+  </text>
+  <!-- Redline accent dot -->
+  <circle cx="560" cy="140" r="5" fill="#FF3048"/>
+</svg>

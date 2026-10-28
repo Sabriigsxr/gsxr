@@ -1,0 +1,32 @@
+{
+  "name": "GSXR LAUNCHCTRL Typography System",
+  "version": "1.0.0",
+  "families": {
+    "display": {
+      "name": "Space Grotesk",
+      "fallback": ["Rajdhani", "Oxanium", "sans-serif"],
+      "usage": "headlines-sections-display"
+    },
+    "body": {
+      "name": "Inter",
+      "fallback": ["Space Grotesk", "system-ui", "sans-serif"],
+      "usage": "body-text-captions"
+    },
+    "mono": {
+      "name": "IBM Plex Mono",
+      "fallback": ["Fira Code", "Menlo", "Consolas", "monospace"],
+      "usage": "terminal-code-status"
+    }
+  },
+  "scale": [
+    { "name": "display-h1", "sizePx": 96, "sizeRem": 6, "weight": 900, "lineHeight": 1.05, "fontFamily": "display", "mobileSizePx": 48 },
+    { "name": "h1", "sizePx": 64, "sizeRem": 4, "weight": 800, "lineHeight": 1.1, "fontFamily": "display" },
+    { "name": "h2", "sizePx": 40, "sizeRem": 2.5, "weight": 700, "lineHeight": 1.2, "fontFamily": "display" },
+    { "name": "h3", "sizePx": 28, "sizeRem": 1.75, "weight": 600, "lineHeight": 1.3, "fontFamily": "display" },
+    { "name": "body-large", "sizePx": 20, "sizeRem": 1.25, "weight": 400, "lineHeight": 1.6, "fontFamily": "body" },
+    { "name": "body", "sizePx": 16, "sizeRem": 1, "weight": 400, "lineHeight": 1.6, "fontFamily": "body" },
+    { "name": "small", "sizePx": 14, "sizeRem": 0.875, "weight": 400, "lineHeight": 1.5, "fontFamily": "body" },
+    { "name": "terminal", "sizePx": 14, "sizeRem": 0.875, "weight": 400, "lineHeight": 1.5, "fontFamily": "mono" },
+    { "name": "terminal-small", "sizePx": 12, "sizeRem": 0.75, "weight": 400, "lineHeight": 1.4, "fontFamily": "mono" }
+  ]
+}

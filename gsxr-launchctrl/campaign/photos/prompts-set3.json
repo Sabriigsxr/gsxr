@@ -1,0 +1,34 @@
+[
+  {
+    "id": "coming_soon_poster",
+    "aspectRatio": "4:5",
+    "filename": "coming-soon-poster-clean-bg-for-text.jpg",
+    "prompt": "Dramatic dark background with a blue superbike silhouette on the left and a blue performance coupe silhouette on the right. Powerful backlighting creating a blue rim light around the vehicles. Wet reflective ground. Subtle smoke. Strong diagonal lighting angle. Color palette: obsidian black, racing blue, electric cyan, redline red accents. No text — clean background for post-production text overlay. Cinematic, photorealistic, high contrast --ar 4:5 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, deformed wheels, duplicated parts, distorted, blurry, low quality",
+    "description": "Coming Soon poster — strong GSXR LAUNCHCTRL identity, clean background for COMING SOON text"
+  },
+  {
+    "id": "square_social",
+    "aspectRatio": "1:1",
+    "filename": "social-square-compact-logo-blue-black.jpg",
+    "prompt": "Compact square composition: dark carbon fiber texture background with centered illuminated monogram XL in blue gradient. Subtle red accent glow. Blue light sweep across the frame. Metallic reflections. Premium racing aesthetic. Color palette: obsidian black, racing blue, electric cyan, metallic silver. Clean, professional, high contrast. Photorealistic --ar 1:1 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, deformed, blurry, low quality",
+    "description": "Square social graphic — compact logo, blue and black racing aesthetic"
+  },
+  {
+    "id": "vertical_story",
+    "aspectRatio": "9:16",
+    "filename": "social-vertical-story-cinematic-tall.jpg",
+    "prompt": "Tall cinematic composition: dark carbon fiber and brushed metal background. A blue superbike fuel tank or performance car front end fills the upper portion with dramatic lighting. Blue light rays sweeping diagonally. Subtle smoke. Red accent line at the bottom. Color palette: obsidian black, racing blue, electric cyan, clean white. Vertical format, photorealistic, high contrast --ar 9:16 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, deformed wheels, distorted, blurry, low quality",
+    "description": "Vertical story graphic — tall cinematic composition for mobile, blue lighting"
+  },
+  {
+    "id": "minimal_teaser",
+    "aspectRatio": "16:9",
+    "filename": "minimal-teaser-monogram-terminal-cursor.jpg",
+    "prompt": "Black background. A single illuminated monogram XL in blue gradient positioned slightly off-center. A small terminal cursor blinking in the bottom-right corner, cyan color. Subtle blue glow and atmospheric haze. Premium, minimal, high-tech. Color palette: obsidian black, racing blue, electric cyan. Photorealistic lighting, clean composition --ar 16:9 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, deformed, blurry, low quality",
+    "description": "Minimal product teaser — black background, illuminated monogram, small terminal cursor"
+  }
+]

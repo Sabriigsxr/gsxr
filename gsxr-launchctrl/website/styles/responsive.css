@@ -1,0 +1,142 @@
+/* GSXR LAUNCHCTRL — Responsive CSS */
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 3rem; }
+  .hero-tagline { font-size: 1.25rem; }
+  .hero-cta { flex-direction: column; }
+  .h1 { font-size: 2.5rem; }
+  .h2 { font-size: 1.75rem; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hero-content { padding: 0 1rem; }
+  .hero-title { font-size: 2.25rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.875rem; }
+  .display-h1 { font-size: 2.25rem; }
+  .badge { font-size: 0.625rem; padding: 0.25rem 0.625rem; }
+}
+
+/* Feature card hover effect */
+.feature-card {
+  transition: var(--gsxr-transition-base);
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Plan step */
+.plan-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gsxr-space-md);
+  padding: var(--gsxr-space-lg) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.plan-step:last-child {
+  border-bottom: none;
+}
+
+.plan-number {
+  font-family: var(--gsxr-font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--gsxr-blue);
+  flex-shrink: 0;
+}
+
+.plan-content h3 {
+  font-family: var(--gsxr-font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--gsxr-white);
+}
+
+/* Terminal command line */
+.terminal-command {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-command .shell-prompt {
+  color: var(--gsxr-silver);
+}
+
+.terminal-command .shell-text {
+  color: var(--gsxr-cyan);
+  margin-left: 0.5rem;
+}
+
+.terminal-output-label {
+  color: var(--gsxr-silver);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.terminal-output-value {
+  color: var(--gsxr-white);
+  margin-left: 1rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.terminal-output-value.in-dev {
+  color: var(--gsxr-red);
+}
+
+/* Icon grid for engineering philosophy */
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gsxr-space-lg);
+  margin-top: var(--gsxr-space-xxl);
+}
+
+.principle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--gsxr-space-lg);
+  background: var(--gsxr-carbon);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--gsxr-radius-xl);
+  transition: var(--gsxr-transition-base);
+}
+
+.principle-item:hover {
+  border-color: var(--gsxr-blue);
+  box-shadow: var(--gsxr-shadow-blue);
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--gsxr-space-sm);
+  color: var(--gsxr-cyan);
+}
+
+.principle-title {
+  font-family: var(--gsxr-font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gsxr-white);
+  margin-bottom: var(--gsxr-space-xs);
+}
+
+.principle-desc {
+  font-family: var(--gsxr-font-body);
+  font-size: 0.9rem;
+  color: var(--gsxr-silver);
+}
+
+@media (max-width: 768px) {
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+}

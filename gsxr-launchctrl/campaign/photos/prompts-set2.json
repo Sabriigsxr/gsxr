@@ -1,0 +1,26 @@
+[
+  {
+    "id": "garage_atmosphere",
+    "aspectRatio": "16:9",
+    "filename": "garage-atmosphere-dark-industrial.jpg",
+    "prompt": "Dark industrial workshop interior, overhead LED panel lights casting dramatic illumination. Blue-colored smoke or haze creating atmospheric depth. Concrete floors with wet reflective surface. Subtle blue light streaks. Carbon fiber textures visible on walls or surfaces. Tools and mechanical parts suggested in background but not the focus. Color palette: obsidian black, carbon black, electric cyan, racing blue. Cinematic, photorealistic, 8K, high contrast, shallow depth of field --ar 16:9 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, brand, watermark, deformed, blurry, low quality",
+    "description": "Garage atmosphere — dark workshop, overhead lights, blue haze, cinematic depth"
+  },
+  {
+    "id": "technology_scene",
+    "aspectRatio": "16:9",
+    "filename": "tech-scene-developer-workstation-night.jpg",
+    "prompt": "Developer workstation at night: mechanical keyboard with blue backlight, dual monitors displaying a dark terminal interface with monospace text and blue syntax highlighting. Laptop with terminal open showing code. Clean desk surface with subtle blue RGB lighting strips. Wet or glossy surfaces reflecting the screen glow. Modern, premium workspace aesthetic. Color palette: obsidian black, racing blue, electric cyan, clean white. Photorealistic, product photography, 8K --ar 16:9 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, brand, watermark, deformed, blurry, low quality",
+    "description": "Technology scene — developer workstation with terminal-inspired interface, no fabricated results"
+  },
+  {
+    "id": "logo_reveal_bg",
+    "aspectRatio": "16:9",
+    "filename": "logo-reveal-background-carbon-fiber.jpg",
+    "prompt": "Dark carbon fiber texture background with directional blue lighting sweeping across from left to right. Subtle red streaks or highlights in the far corners, restrained like a tachometer redline. Metallic silver reflective surfaces with blue rim light. Abstract geometric shapes suggesting motion and precision. No text or logos. Color palette: carbon black, electric cyan, redline red, metallic silver. Cinematic, photorealistic, 8K, shallow depth of field --ar 16:9 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, deformed, blurry, low quality",
+    "description": "Logo reveal background — dark carbon-fiber texture, directional blue lighting, subtle red streaks"
+  }
+]

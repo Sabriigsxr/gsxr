@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hero_image",
+    "aspectRatio": "16:9",
+    "filename": "hero-night-garage-superbike-car.jpg",
+    "prompt": "A cinematic night garage scene: on the left, a deep blue superbike with silver metallic accents and detailed tires, aggressive front three-quarter view; on the right, a blue performance coupe with dramatic paint reflections. Wet reflective concrete flooring with blue and cyan light streaks reflecting the vehicles. Dark industrial warehouse interior with overhead lighting creating dramatic directional illumination. Subtle blue smoke/haze in the air. Premium materials: brushed metal, carbon fiber, glass. Color palette: obsidian black, racing blue, electric cyan, with restrained red accents. Ultra-realistic, photorealistic, 8K, cinematic photography, high contrast --ar 16:9 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, signature, deformed wheels, duplicated parts, extra limbs, distorted, blurry, low quality",
+    "description": "Hero image — blue superbike and blue performance coupe in cinematic night garage"
+  },
+  {
+    "id": "superbike_portrait",
+    "aspectRatio": "4:5",
+    "filename": "superbike-portrait-blue-front-quarter.jpg",
+    "prompt": "Aggressive front three-quarter view of a deep blue superbike, leaning slightly as if on a racetrack. Blue fairings with silver/metallic accent stripes. Hyper-detailed tires with tread texture, metallic swingarm, brake calipers. Dramatic studio lighting with blue rim light. Wet reflective black background. Premium mechanical details visible. No brand badges or logos. Color palette: obsidian black, racing blue, electric cyan, metallic silver. Photorealistic, 8K, cinematic automotive photography, high contrast --ar 4:5 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, brand, watermark, signature, deformed wheels, duplicated parts, extra limbs, distorted, blurry, low quality",
+    "description": "Superbike portrait — aggressive front three-quarter view, blue fairings, detailed tires"
+  },
+  {
+    "id": "car_portrait",
+    "aspectRatio": "4:5",
+    "filename": "performance-car-portrait-low-angle.jpg",
+    "prompt": "Low-angle shot of a blue performance coupe, dramatic perspective from ground level. Blue paint with deep reflections, black and silver detailing. Gloss black wheels with blue accents, brake calipers visible. Wet asphalt ground with reflections. Industrial backdrop with blue mood lighting. No brand badges or logos. Color palette: obsidian black, racing blue, electric cyan, clean white highlights. Photorealistic, 8K, cinematic automotive photography --ar 4:5 --style raw",
+    "negativePrompt": "cartoon, 3d render, drawing, sketch, illustration, text, words, logo, badge, trademark, brand, watermark, deformed wheels, duplicated parts, extra limbs, distorted, blurry",
+    "description": "Performance car portrait — low-angle automotive photography, blue paint, dramatic reflections"
+  }
+]

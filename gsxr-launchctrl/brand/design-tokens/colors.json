@@ -1,0 +1,36 @@
+{
+  "name": "GSXR LAUNCHCTRL Color System",
+  "version": "1.0.0",
+  "colors": {
+    "primary": {
+      "obsidianBlack": { "hex": "#080B10", "rgb": [8, 11, 16], "usage": "primary-background" },
+      "carbonBlack": { "hex": "#111722", "rgb": [17, 23, 34], "usage": "secondary-background" },
+      "racingBlue": { "hex": "#087BFF", "rgb": [8, 123, 255], "usage": "links-primary-buttons" },
+      "electricCyan": { "hex": "#21C8FF", "rgb": [33, 200, 255], "usage": "highlights-acents" }
+    },
+    "text": {
+      "cleanWhite": { "hex": "#F5F7FA", "rgb": [245, 247, 250], "usage": "primary-text-headings" },
+      "metallicSilver": { "hex": "#C7D0DC", "rgb": [199, 208, 220], "usage": "secondary-text-labels" }
+    },
+    "accent": {
+      "redlineRed": { "hex": "#FF3048", "rgb": [255, 48, 72], "usage": "accent-warnings-redline" }
+    }
+  },
+  "usage": {
+    "backgrounds": ["obsidianBlack", "carbonBlack"],
+    "primaryAction": ["racingBlue"],
+    "highlights": ["electricCyan"],
+    "textPrimary": ["cleanWhite"],
+    "textSecondary": ["metallicSilver"],
+    "accentDanger": ["redlineRed"]
+  },
+  "accessibility": {
+    "contrastRatios": {
+      "cleanWhite_on_obsidianBlack": 19.2,
+      "metallicSilver_on_obsidianBlack": 11.8,
+      "racingBlue_on_carbonBlack": "INSUFFICIENT (do not use)",
+      "racingBlue_on_obsidianBlack": 8.7,
+      "redlineRed_on_obsidianBlack": 5.4
+    }
+  }
+}
