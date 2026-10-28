@@ -1,0 +1,77 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "local-openai/qwen2.5-coder-3b",
+  "providers": {
+    "ollama": {
+      "name": "Ollama (local only)",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama-local",
+        "timeout": false,
+        "headerTimeout": false,
+        "chunkTimeout": false
+      },
+      "models": {
+        "pentest-bughunter:latest": {
+          "name": "pentest-bughunter",
+          "capabilities": {
+            "tools": true,
+            "input": ["text"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 32768,
+            "output": 4096
+          }
+        }
+      }
+    },
+    "local-openai": {
+      "name": "Local OpenAI-Compatible",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:8001/v1",
+        "apiKey": "sk-local-12345",
+        "timeout": false,
+        "headerTimeout": false,
+        "chunkTimeout": false
+      },
+      "models": {
+        "qwen2.5-coder-3b": {
+          "name": "qwen2.5-coder-3b",
+          "capabilities": {
+            "tools": true,
+            "input": ["text"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 32768,
+            "output": 4096
+          }
+        }
+      }
+    }
+  },
+  "agents": {
+    "local": {
+      "description": "Local-only agent: Ollama on 127.0.0.1 with a slim tool set. Use when the request must not leave the host.",
+      "mode": "primary",
+      "model": "ollama/pentest-bughunter:latest"
+    },
+    "local-openai": {
+      "description": "Local OpenAI-compatible agent: Qwen2.5-Coder-3B via local API server. Use for code assistance and pentest tasks.",
+      "mode": "primary",
+      "model": "local-openai/qwen2.5-coder-3b"
+    }
+  },
+  "skills": {
+    "paths": [],
+    "urls": []
+  },
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "edit", "resource": "*", "effect": "allow" },
+    { "action": "read", "resource": "*", "effect": "allow" }
+  ]
+}

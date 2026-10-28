@@ -1,0 +1,64 @@
+{
+  "favorite": [],
+  "recent": [
+    {
+      "providerID": "local-openai",
+      "modelID": "local-openai/qwen2.5-coder-3b"
+    },
+    {
+      "providerID": "console-nvidia",
+      "modelID": "deepseek-ai/deepseek-v4.1-flash"
+    },
+    {
+      "providerID": "opencode",
+      "modelID": "nemotron-3.5-lightning-free"
+    },
+    {
+      "providerID": "console-openai",
+      "modelID": "gpt-4o-mini"
+    },
+    {
+      "providerID": "console-nvidia",
+      "modelID": "nvidia/nemotron-3.5-super-vl-120b-a12b"
+    },
+    {
+      "providerID": "opencode",
+      "modelID": "deepseek-v4.1-flash-free"
+    },
+    {
+      "providerID": "nvidia",
+      "modelID": "deepseek-ai/deepseek-v4.1-flash"
+    },
+    {
+      "providerID": "opencode",
+      "modelID": "glm-5.3-flash-free"
+    },
+    {
+      "providerID": "opencode",
+      "modelID": "beam-free"
+    },
+    {
+      "providerID": "opencode",
+      "modelID": "nemotron-3.5-super-vl-free"
+    },
+    {
+      "providerID": "ollama",
+      "modelID": "pentest-bughunter:latest"
+    }
+  ],
+  "variant": {
+    "console-nvidia/minimaxai/minimax-m3.1-flash": "default",
+    "console-nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b": "default",
+    "google/gemma-4-31b-it": "default",
+    "nvidia/nvidia/nemotron-3.5-super-vl-120b-a12b": "default",
+    "opencode-go/beam-free": "default",
+    "opencode/deepseek-v4.1-flash-free": "max",
+    "opencode/flint-40b-free": "default",
+    "opencode/glm-5.3-flash-free": "default",
+    "opencode/nemotron-3.5-super-vl-free": "default",
+    "openrouter/nvidia/nemotron-3.5-super-vl:free": "default",
+    "opencode/beam-free": "max",
+    "nvidia/deepseek-ai/deepseek-v4.1-flash": "default",
+    "console-nvidia/deepseek-ai/deepseek-v4.1-flash": "default"
+  }
+}
