@@ -1,0 +1,13 @@
+[Unit]
+Description=CLIProxyAPI CPP Proxy Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/gsxr/bin/cpa-core
+ExecStart=/home/gsxr/bin/cpa-core/cli-proxy-api -config /home/gsxr/bin/cpa-core/config.yaml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

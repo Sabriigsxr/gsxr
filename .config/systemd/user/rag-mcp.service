@@ -1,0 +1,14 @@
+[Unit]
+Description=PentesterFlow RAG MCP Server
+After=network.target
+
+[Service]
+Type=simple
+Environment="TMPDIR=/home/gsxr/tmp"
+Environment="RAG_DB=/home/gsxr/rag_db"
+ExecStart=/usr/bin/python3 /home/gsxr/rag_mcp.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

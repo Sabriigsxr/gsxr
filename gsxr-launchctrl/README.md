@@ -12,9 +12,10 @@ CLI with an automotive/motorsport aesthetic, built for developers who push limit
 
 ```bash
 # Preview the landing page locally
-cd gsxr-launchctrl/website
+# Serve from the gsxr-launchctrl package root so all /gsxr-launchctrl/... asset paths resolve
+cd gsxr-launchctrl
 python3 -m http.server 8000
-# → Open http://localhost:8000/index.html
+# → Open http://localhost:8000/website/index.html
 ```
 
 ---

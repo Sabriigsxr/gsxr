@@ -447,7 +447,7 @@ Every 20 min: "Am I making progress?" No → rotate endpoint/subdomain/vuln clas
 Clickjacking usually $0 but MetaMask paid $120K. Ask: "What's business impact?" before severity.
 
 ### 16. VALIDATE BEFORE WRITING
-Run `/validate` before report. Gate 0 = 30 seconds. Report = 30 minutes.
+Run `/validate` before report. Report = 30 minutes.
 
 ### 17. CREDENTIAL LEAKS NEED EXPLOITATION PROOF
 API key = Informational. Proving what key accesses (S3, DB, admin) = Medium/High. Always call API as leaked key.
@@ -963,43 +963,6 @@ curl -s -X PUT "https://TARGET-APP.firebaseio.com/test.json" -d '"pwned"'  # Ope
 # Kubernetes / Docker
 curl -sk https://TARGET:6443/api/v1/namespaces/default/pods  # K8s API unauth
 curl -s http://TARGET:2375/containers/json  # Docker API
-```
-
----
-
-## 🔍 VALIDATION GATES (Pre-Submission)
-
-### Gate 0: Reality Check (30 sec)
-```
-[ ] Bug real — confirmed with actual HTTP requests, not just code reading
-[ ] Bug in scope — checked program scope explicitly
-[ ] Reproducible from scratch (not just once)
-[ ] Evidence captured (screenshot, response, video)
-```
-
-### Gate 1: Impact Validation (2 min)
-```
-[ ] Can answer: "What can attacker DO that they couldn't before?"
-[ ] Answer > "see non-sensitive data"
-[ ] Real victim: another user's data, company data, financial loss
-[ ] Not relying on user doing something unlikely
-```
-
-### Gate 2: Deduplication Check (5 min)
-```
-[ ] Searched HackerOne Hacktivity for program + similar bug title
-[ ] Searched GitHub issues for target repo
-[ ] Read most recent 5 disclosed reports for program
-[ ] Not a "known issue" in their changelog or public docs
-```
-
-### Gate 3: Report Quality (10 min)
-```
-[ ] Title follows formula: [Class] in [endpoint] allows [actor] to [impact]
-[ ] Steps to Reproduce has exact HTTP request (copy-paste ready)
-[ ] Evidence shows actual impact (not just 200 response)
-[ ] Severity matches CVSS 3.1 AND program's severity definitions
-[ ] Remediation: 1-2 sentences of concrete fix
 ```
 
 ---

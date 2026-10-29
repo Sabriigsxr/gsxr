@@ -89,6 +89,17 @@
 .text-white { color: var(--gsxr-white); }
 .text-silver { color: var(--gsxr-silver); }
 
+/* Utilities */
+.text-center { text-align: center; }
+
+/* Status Label */
+.status-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--gsxr-space-md);
+}
+
 /* Badge / Status Label */
 .badge {
   display: inline-flex;

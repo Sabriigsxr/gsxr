@@ -117,7 +117,7 @@
   }
 
   // Coming soon button interaction
-  function handleComingSoon() {
+  function handleComingSoon(event) {
     const btn = event.target;
     btn.textContent = 'NOTIFY ME';
     btn.style.background = 'var(--gsxr-accent-gradient)';

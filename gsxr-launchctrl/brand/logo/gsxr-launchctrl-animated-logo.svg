@@ -20,13 +20,6 @@
     </filter>
   </defs>
   <rect width="800" height="200" fill="#080B10"/>
-  <!-- Background grid pattern -->
-  <g stroke="#111722" stroke-width="1">
-    <defs>pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#111722" stroke-width="1"/>
-    </defs>
-    <rect width="800" height="200" fill="url(#grid)" opacity="0.3"/>
-  </g>
   <!-- Reveal sweep -->
   <rect id="sweep" x="-200" y="0" width="400" height="200" fill="url(#gradAnim)" clip-path="url(#wordmarkClip)" opacity="0">
     <animate attributeName="x" values="-200;800" dur="3s" begin="0s"/>

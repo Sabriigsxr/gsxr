@@ -1,0 +1,14 @@
+[Unit]
+Description=Local OpenAI API Server (proxy to Ollama)
+After=ollama.service network.target
+Requires=ollama.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/gsxr/local_openai_server.py
+Environment="LOCAL_API_KEY=sk-local-12345"
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

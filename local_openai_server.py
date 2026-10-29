@@ -17,8 +17,8 @@ import logging
 from contextlib import asynccontextmanager
 
 # Configuration
-LOCAL_BASE_URL = "http://localhost:8080/v1"
-MODEL_NAME = "qwen2.5-coder-3b"
+LOCAL_BASE_URL = "http://127.0.0.1:11434"  # Ollama root (OpenAI-compatible /v1 lives under it)
+MODEL_NAME = "pentest-bughunter:latest"  # model served by local Ollama
 API_KEY = os.getenv("LOCAL_API_KEY", "sk-local-12345")  # Set your API key here
 
 logging.basicConfig(level=logging.INFO)
@@ -120,9 +120,11 @@ class ModelList(BaseModel):
 @app.get("/health")
 async def health():
     try:
-        r = await local_client.get("/health", timeout=5.0)
+        # Ollama exposes /api/version as a liveness probe (no /v1/health endpoint).
+        async with httpx.AsyncClient(timeout=5.0) as client:
+            r = await client.get("http://127.0.0.1:11434/api/version")
         return {"status": "healthy" if r.status_code == 200 else "unhealthy"}
-    except:
+    except Exception:
         return {"status": "unhealthy"}
 
 
@@ -229,4 +231,4 @@ async def get_model(model_id: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001, ws=None)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

@@ -200,3 +200,48 @@
   text-align: center;
   padding-top: var(--gsxr-space-xxl);
 }
+
+/* Hero typography */
+.hero-title {
+  font-family: var(--gsxr-font-display);
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--gsxr-white);
+  margin: 0 0 var(--gsxr-space-sm) 0;
+  display: block;
+}
+
+.hero-title .gsxr { color: var(--gsxr-white); }
+.hero-title .launchctrl { color: var(--gsxr-cyan); }
+
+.hero-tagline {
+  font-family: var(--gsxr-font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gsxr-cyan);
+  margin: 0 0 var(--gsxr-space-md) 0;
+  display: block;
+}
+
+.hero-description {
+  font-family: var(--gsxr-font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--gsxr-silver);
+  max-width: 650px;
+  margin: 0 auto var(--gsxr-space-xl) 0;
+}
+
+/* Hero CTA */
+.hero-cta {
+  display: flex;
+  gap: var(--gsxr-space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}

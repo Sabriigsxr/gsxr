@@ -65,9 +65,52 @@
       "model": "local-openai/qwen2.5-coder-3b"
     }
   },
+  "mcp": {
+    "hexstrike": {
+      "type": "local",
+      "command": [
+        "python3",
+        "/home/gsxr/hexstrike_mcp_simple.py",
+        "--server",
+        "http://127.0.0.1:8888"
+      ],
+      "enabled": true,
+      "timeout": 300,
+      "description": "HexStrike AI v6.0 MCP server - 150+ security tools (patched: deferred HTTP connect)"
+    },
+    "rag": {
+      "type": "local",
+      "command": [
+        "python3",
+        "/home/gsxr/rag_mcp.py"
+      ],
+      "enabled": true,
+      "description": "PentesterFlow RAG MCP server - ChromaDB knowledge base (2600+ pentest scenarios). Read-only retrieval of playbooks and guidance.",
+      "environment": {
+        "TMPDIR": "/home/gsxr/tmp",
+        "RAG_DB": "/home/gsxr/rag_db"
+      }
+    },
+    "openai-local": {
+      "type": "local",
+      "command": [
+        "python3",
+        "/home/gsxr/local_openai_server.py"
+      ],
+      "enabled": true,
+      "description": "Local OpenAI-compatible API server proxying to Ollama on port 8001",
+      "environment": {
+        "LOCAL_API_KEY": "sk-local-12345"
+      }
+    }
+  },
   "skills": {
-    "paths": [],
-    "urls": []
+    "paths": [
+      "/home/gsxr/anthropic-cybersecurity-skills/skills"
+    ],
+    "urls": [
+      "https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git"
+    ]
   },
   "permissions": [
     { "action": "shell", "resource": "*", "effect": "ask" },
